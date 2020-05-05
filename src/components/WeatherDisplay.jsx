@@ -8,7 +8,7 @@ import { Navbar,NavDropdown, MenuItem, Nav, Grid, Row, Col } from "react-bootstr
 class WeatherDisplay extends Component{
 
     collectData(place){
-        let URL = `http://api.openweathermap.org/data/2.5/weather?q=${this.props.cities[place].name}&appid=e03fcde097d74790d2a8569aa4d88bd1&units=metric`;
+        let URL = `https://api.openweathermap.org/data/2.5/weather?q=${this.props.cities[place].name}&appid=e03fcde097d74790d2a8569aa4d88bd1&units=metric`;
         this.props.fetchData(URL);
     }
 
