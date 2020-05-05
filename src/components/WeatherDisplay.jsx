@@ -27,7 +27,7 @@ class WeatherDisplay extends Component{
         let weatherData = this.props.weatherData;
             if(weatherData.weather){
                 const weatherMain = weatherData.weather[0]; 
-                const iconUrl = `http://openweathermap.org/img/w/${weatherMain.icon}.png`;
+                const iconUrl = `https://openweathermap.org/img/w/${weatherMain.icon}.png`;
                 return (
                     <div>
                         <h1>
